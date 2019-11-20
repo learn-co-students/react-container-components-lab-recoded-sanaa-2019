@@ -26,7 +26,15 @@ export default class LatestMovieReviewsContainer extends Component {
 
     return (
       <div className="latest-movie-reviews">
-        <MovieReviews reviews={movies} />
+        {movies.map(movie => (
+          <MovieReviews
+            key={movie.display_title}
+            name={movie.display_title}
+            summaryShort={movie.summary_short}
+            link={movie.link.url}
+            src={movie.multimedia ? movie.multimedia.src : ""}
+          />
+        ))}
       </div>
     );
   }

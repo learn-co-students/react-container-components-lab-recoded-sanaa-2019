@@ -50,7 +50,16 @@ export default class SearchableMovieReviewsContainer extends Component {
           </div>
         </form>
 
-        <MovieReviews reviews={movies} />
+        {movies.map(movie => (
+          <MovieReviews
+            key={movie.display_title}
+            name={movie.display_title}
+            summaryShort={movie.summary_short}
+            link={movie.link.url}
+            src={movie.multimedia ? movie.multimedia.src : ""}
+            
+          />
+        ))}
 
         <hr />
       </div>
