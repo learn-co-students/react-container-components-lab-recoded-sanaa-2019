@@ -30,7 +30,7 @@ export default class LatestMovieReviewsContainer extends Component {
 
         return (
             <div className="latest-movie-reviews">
-                <MovieReviews review={this.state.reviews} />
+                <MovieReviews reviews={this.state.reviews} />
             </div>
         )
     }

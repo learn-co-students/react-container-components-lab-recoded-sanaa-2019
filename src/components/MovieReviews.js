@@ -1,11 +1,11 @@
 // Code MovieReviews Here
 import React from 'react';
 
-const MovieReviews = ({ review }) =>
-    // { console.log(review); }
+const MovieReviews = ({ reviews }) =>
+    // 
     <div className="review-list">
-        {review.map(one => {
-            return <div className="review"><h1>{one.display_title}</h1><p>{one.summary_short}</p></div>
+        {reviews.map(one => {
+            return <div className="review"><h1>{console.log(one.display_title)} {one.display_title}</h1><p>{one.summary_short}</p></div>
         })}
     </div>
 

@@ -38,7 +38,7 @@ export default class SearchableMovieReviewsContainer extends Component {
                     <input type="text" onChange={event => this.handleInput(event)} value={this.state.searchTerm} />
                     <button>Button</button>
                 </form>
-                <MovieReviews review={this.state.reviews} />
+                <MovieReviews reviews={this.state.reviews} />
 
 
             </div>
